@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next";
 import { HardHatIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-export function HomePage() {
+export function UnderConstructionPage() {
   const { t } = useTranslation();
 
   return (
@@ -9,11 +9,11 @@ export function HomePage() {
       <HardHatIcon className="text-primary size-16 max-md:size-25" />
       <div className="border border-border max-md:w-full md:h-16"></div>
       <div>
-        <h1 className="text-2xl text-primary max-md:text-center">
-          {t("maintenance.title")}
+        <h1 className="text-2xl font-bold text-primary max-md:text-center">
+          {t("construction.title")}
         </h1>
         <h2 className="text-foreground max-md:text-center">
-          {t("maintenance.message")}
+          {t("construction.message")}
         </h2>
       </div>
     </div>

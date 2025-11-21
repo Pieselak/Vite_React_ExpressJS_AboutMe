@@ -2,7 +2,7 @@ import "@/i18n";
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 
 import { HomePage } from "@/app/modules/User/Home/Home.page.tsx";
-import { AboutMePage } from "@/app/modules/User/AboutMe/AboutMe.page.tsx";
+// import { AboutMePage } from "@/app/modules/User/AboutMe/AboutMe.page.tsx";
 import { MyProjectsPage } from "@/app/modules/User/MyProjects/MyProjects.page.tsx";
 import { MyGlucosePage } from "@/app/modules/User/MyGlucose/MyGlucose.page.tsx";
 import { SelectLanguagePage } from "@/app/modules/User/SelectLanguage/SelectLanguage.page.tsx";

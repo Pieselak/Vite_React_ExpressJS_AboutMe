@@ -1,7 +1,11 @@
 import { GhostIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-export function NotFoundPage() {
+type NotFoundPageProps = {
+  message?: string;
+};
+
+export function NotFoundPage({ message }: NotFoundPageProps) {
   const { t } = useTranslation();
 
   return (
@@ -10,10 +14,10 @@ export function NotFoundPage() {
       <div className="border border-border max-md:w-full md:h-16"></div>
       <div>
         <h1 className="text-2xl font-bold text-primary max-md:text-center">
-          {t("notFound.title")}
+          {t("notFoundPage.title")}
         </h1>
         <h2 className="text-foreground max-md:text-center">
-          {t("notFound.message")}
+          {message ? message : t("notFoundPage.message")}
         </h2>
       </div>
     </div>

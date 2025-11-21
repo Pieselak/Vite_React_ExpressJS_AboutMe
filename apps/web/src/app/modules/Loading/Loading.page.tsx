@@ -8,7 +8,7 @@ export function LoadingPage() {
     <div className="flex flex-col justify-center items-center self-center gap-5">
       <PuffLoader size="100px" color="var(--primary)" />
       <h1 className="text-primary font-bold text-2xl">
-        {t("loading.message")}
+        {t("loadingPage.message")}
       </h1>
     </div>
   );

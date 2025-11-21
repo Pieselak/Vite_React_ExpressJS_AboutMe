@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom";
+import { motion, MotionConfig } from "framer-motion";
+import { Outlet, useLocation } from "react-router-dom";
 import {
   CandyIcon,
   FoldersIcon,
@@ -18,17 +19,6 @@ export type navigationItem = {
   url: string;
 };
 
-export type footerItem = {
-  label: string;
-  icon?: LucideIcon;
-  url?: string;
-};
-
-export type footerSections = {
-  label: string;
-  items: footerItem[];
-};
-
 const navigationItems: navigationItem[] = [
   { label: "home", icon: HomeIcon, url: "/home" },
   { label: "aboutme", icon: UserIcon, url: "/aboutme" },
@@ -38,17 +28,27 @@ const navigationItems: navigationItem[] = [
 
 export function UserLayout() {
   const isMobile = useIsMobile();
+  const location = useLocation();
+
   return (
-    <div className="flex min-h-dvh flex-col justify-start items-center">
-      {isMobile ? (
-        <UserMobileHeader navigationItems={navigationItems} />
-      ) : (
-        <UserHeader navigationItems={navigationItems} />
-      )}
-      <main className="flex flex-1 p-3 w-full justify-center items-start overflow-hidden">
-        <Outlet />
-      </main>
-      <UserFooter />
-    </div>
+    <MotionConfig transition={{ duration: 0.25 }}>
+      <div className="flex min-h-dvh flex-col justify-start items-center">
+        {isMobile ? (
+          <UserMobileHeader navigationItems={navigationItems} />
+        ) : (
+          <UserHeader navigationItems={navigationItems} />
+        )}
+        <motion.main
+          key={location.pathname}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="flex flex-1 mx-3 max-w-5xl justify-center items-start overflow-hidden"
+        >
+          <Outlet />
+        </motion.main>
+        <UserFooter />
+      </div>
+    </MotionConfig>
   );
 }

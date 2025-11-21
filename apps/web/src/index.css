@@ -21,6 +21,25 @@
     --input: oklch(0.68 0.13 251.42);
     --ring: oklch(0.63 0.16 253.15);
 
+    --gray-bg: oklch(0.95 0.01 250);
+    --gray-border: oklch(0.80 0.02 250);
+    --gray-text: oklch(0.50 0.02 250);
+    --blue-bg: oklch(0.90 0.08 250);
+    --blue-border: oklch(0.65 0.15 252);
+    --blue-text: oklch(0.45 0.18 254);
+    --green-bg: oklch(0.90 0.08 150);
+    --green-border: oklch(0.65 0.12 150);
+    --green-text: oklch(0.45 0.15 150);
+    --yellow-bg: oklch(0.93 0.10 95);
+    --yellow-border: oklch(0.75 0.15 95);
+    --yellow-text: oklch(0.50 0.18 90);
+    --orange-bg: oklch(0.90 0.10 60);
+    --orange-border: oklch(0.70 0.15 55);
+    --orange-text: oklch(0.50 0.18 50);
+    --red-bg: oklch(0.88 0.12 25);
+    --red-border: oklch(0.65 0.20 25);
+    --red-text: oklch(0.55 0.22 28);
+
     --font-sans: 'Geist', 'Geist Fallback', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-serif: "Geist", "Geist Fallback", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -44,18 +63,37 @@
     --card-foreground: oklch(0.99 0 0);
     --popover: oklch(0.27 0.06 252.20);
     --popover-foreground: oklch(0.99 0 0);
-    --primary: oklch(0.56 0.15 253.76);
+    --primary: oklch(0.62 0.18 254.43);
     --primary-foreground: oklch(1.00 0 0);
     --secondary: oklch(0.29 0.00 228.82);
     --secondary-foreground: oklch(0.99 0 0);
     --muted: oklch(0.27 0.06 252.20);
-    --muted-foreground: oklch(0.65 0.07 249.60);
+    --muted-foreground: oklch(0.80 0.03 248.25);
     --accent: oklch(0.40 0.10 253.29);
     --accent-foreground: oklch(0.99 0 0);
     --destructive: oklch(0.70 0.19 22.23);
     --border: oklch(0.26 0.04 249.53);
     --input: oklch(0.43 0.11 251.54);
     --ring: oklch(0.56 0.15 253.76);
+
+    --gray-bg: oklch(0.25 0.02 250);
+    --gray-border: oklch(0.35 0.03 250);
+    --gray-text: oklch(0.70 0.02 250);
+    --blue-bg: oklch(0.30 0.08 252);
+    --blue-border: oklch(0.45 0.12 253);
+    --blue-text: oklch(0.70 0.15 254);
+    --green-bg: oklch(0.28 0.08 150);
+    --green-border: oklch(0.45 0.10 150);
+    --green-text: oklch(0.75 0.12 150);
+    --yellow-bg: oklch(0.35 0.10 95);
+    --yellow-border: oklch(0.55 0.12 95);
+    --yellow-text: oklch(0.80 0.14 90);
+    --orange-bg: oklch(0.32 0.10 55);
+    --orange-border: oklch(0.50 0.12 55);
+    --orange-text: oklch(0.78 0.14 50);
+    --red-bg: oklch(0.30 0.10 25);
+    --red-border: oklch(0.55 0.15 25);
+    --red-text: oklch(0.75 0.16 28);
 
     --shadow-2xs: 0 1px 3px 0px oklch(0.00 0 0 / 0.05);
     --shadow-xs: 0 1px 3px 0px oklch(0.00 0 0 / 0.05);
@@ -87,6 +125,25 @@
     --color-border: var(--border);
     --color-input: var(--input);
     --color-ring: var(--ring);
+
+    --color-gray-bg: var(--gray-bg);
+    --color-gray-border: var(--gray-border);
+    --color-gray-text: var(--gray-text);
+    --color-blue-bg: var(--blue-bg);
+    --color-blue-border: var(--blue-border);
+    --color-blue-text: var(--blue-text);
+    --color-green-bg: var(--green-bg);
+    --color-green-border: var(--green-border);
+    --color-green-text: var(--green-text);
+    --color-yellow-bg: var(--yellow-bg);
+    --color-yellow-border: var(--yellow-border);
+    --color-yellow-text: var(--yellow-text);
+    --color-orange-bg: var(--orange-bg);
+    --color-orange-border: var(--orange-border);
+    --color-orange-text: var(--orange-text);
+    --color-red-bg: var(--red-bg);
+    --color-red-border: var(--red-border);
+    --color-red-text: var(--red-text);
 
     --font-sans: var(--font-sans);
     --font-mono: var(--font-mono);

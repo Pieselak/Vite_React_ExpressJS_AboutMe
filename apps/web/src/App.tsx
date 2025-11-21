@@ -37,25 +37,14 @@ function App() {
         <Route element={<UserLayout />}>
           <Route path="m" element={<MaintenancePage />} />
           <Route path="f" element={<ForbiddenPage />} />
+          <Route path="l" element={<LoadingPage />} />
           <Route index element={<Navigate to="home" />} />
-          <Route
-            path="home"
-            element={<UnderConstructionPage /> /*<HomePage />*/}
-          />
+          <Route path="home" element={<HomePage />} />
           <Route
             path="aboutme"
             element={<UnderConstructionPage /> /*<AboutMePage />*/}
           />
-          <Route path="projects">
-            <Route
-              index
-              element={<UnderConstructionPage /> /*<MyProjectsPage />*/}
-            />
-            <Route
-              path=":projectId"
-              element={<UnderConstructionPage /> /*<MyProjectsPage />*/}
-            />
-          </Route>
+          <Route path="projects/:projectId?" element={<MyProjectsPage />} />
           <Route path="sugar" element={<MyGlucosePage />} />
           <Route path="language" element={<SelectLanguagePage />} />
           <Route path="*" element={<NotFoundPage />} />

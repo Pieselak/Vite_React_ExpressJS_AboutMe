@@ -9,10 +9,10 @@ export function MaintenancePage() {
       <div className="border border-border max-md:w-full md:h-16"></div>
       <div>
         <h1 className="text-2xl font-bold text-primary max-md:text-center">
-          {t("maintenance.title")}
+          {t("maintenancePage.title")}
         </h1>
         <h2 className="text-foreground max-md:text-center">
-          {t("maintenance.message")}
+          {t("maintenancePage.message")}
         </h2>
       </div>
     </div>

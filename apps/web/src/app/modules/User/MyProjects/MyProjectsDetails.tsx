@@ -23,7 +23,7 @@ export function MyProjectsDetails({ project }: MyProjectsDetailsProps) {
   };
   return (
     <div className="flex flex-wrap md:flex-nowrap gap-3">
-      <div className="flex w-full md:max-w-1/3 flex-col gap-2">
+      <div className="flex w-full md:max-w-1/3 flex-col gap-3">
         <img
           src={project.image}
           className="w-full max-h-64 object-cover rounded-md aspect-square"

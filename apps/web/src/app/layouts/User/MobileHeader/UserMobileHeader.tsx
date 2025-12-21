@@ -38,7 +38,7 @@ export function UserMobileHeader({ navigationItems }: UserMobileHeaderProps) {
   };
 
   return (
-    <header className="flex justify-start items-center w-full gap-2.5 my-3 z-50">
+    <header className="flex justify-start items-center w-full gap-2.5 mt-3 z-50">
       <motion.div
         initial="hidden"
         animate={menuOpen ? "exit" : "visible"}

@@ -24,7 +24,7 @@ export function UserHeader({ navigationItems }: userHeaderProps) {
       initial="hidden"
       animate="visible"
       variants={headerVariants}
-      className="flex justify-center items-center gap-2.5 m-3 overflow-x-hidden z-50 w-full"
+      className="flex justify-center items-center gap-2.5 mt-3 overflow-x-hidden z-50 w-full"
     >
       <motion.button
         whileHover={{ scale: 1.05 }}

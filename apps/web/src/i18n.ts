@@ -134,7 +134,7 @@ const resources = {
           started: "Rozpoczęto",
           completed: "Zakończono",
           status: {
-            completed: "Zakończony",
+            completed: "Ukończony",
             inProgress: "W trakcie realizacji",
             planned: "Zaplanowany",
           },

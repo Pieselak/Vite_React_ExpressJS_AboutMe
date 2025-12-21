@@ -38,7 +38,7 @@ function App() {
           <Route index element={<Navigate to="home" />} />
           <Route path="home" element={<HomePage />} />
           <Route
-            path="aboutme"
+            path="about"
             element={<UnderConstructionPage /> /*<AboutMePage />*/}
           />
           <Route path="projects/:projectId?" element={<MyProjectsPage />} />

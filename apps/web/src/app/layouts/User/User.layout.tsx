@@ -21,7 +21,7 @@ export type navigationItem = {
 
 const navigationItems: navigationItem[] = [
   { label: "home", icon: HomeIcon, url: "/home" },
-  { label: "aboutme", icon: UserIcon, url: "/aboutme" },
+  { label: "aboutme", icon: UserIcon, url: "/about" },
   { label: "projects", icon: FoldersIcon, url: "/projects" },
   { label: "sugar", icon: CandyIcon, url: "/sugar" },
 ];
